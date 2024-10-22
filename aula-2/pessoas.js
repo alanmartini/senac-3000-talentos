@@ -1,15 +1,19 @@
-/*
 // Exportando variáveis e funções
-export const nome = "João";
-export const idade = 30;
+const nome = "João";
+const idade = 30;
 
-export function saudacao(nome) {
-  return `Olá, ${nome}!`;
+function saudacao(nome) {
+  console.log(`Olá da função saudação!, ${nome}!`);
+  //return `Olá, ${nome}!`;
+}
+
+function multiplicar(num1, num2) {
+  return num1 * num2;
 }
 
 module.exports = {
   nome,
   idade,
   saudacao,
+  multiplicar,
 };
-*/

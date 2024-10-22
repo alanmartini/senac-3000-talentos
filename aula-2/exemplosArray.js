@@ -8,8 +8,8 @@ console.log(nomes);
 
 /*
     function adicionarElemento(array, elemento) {
-    array[array.length] = elemento;
-    return array;
+        array[array.length] = elemento;
+        return array;
     }
 */
 
@@ -19,9 +19,9 @@ console.error(ultimoElemento);
 
 /*
     function removerUltimoElemento(array) {
-    const ultimoElemento = array[array.length - 1];
-    array.length = array.length - 1;
-    return ultimoElemento;
+        const ultimoElemento = array[array.length - 1];
+        array.length = array.length - 1;
+        return ultimoElemento;
     }
 */
 
