@@ -33,5 +33,6 @@ git checkout <branch>:
 Mostra o histórico de commits.
 git log
 
-Volta para um determinado ponto na história do repositório.
-git reset
+Exibe informações sobre o repositório remoto.
+git remote -v
+
