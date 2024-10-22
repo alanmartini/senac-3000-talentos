@@ -11,3 +11,8 @@ let membroDoClube = false;
 let temCupom = true;
 
 // Verifique se o cliente tem direito ao desconto
+if (valorCompra > 100 && (membroDoClube || temCupom)) {
+  console.log("Desconto aplicado!");
+} else {
+  console.log("Sem direito ao desconto.");
+}

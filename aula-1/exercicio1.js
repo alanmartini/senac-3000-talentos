@@ -12,7 +12,7 @@ let temEmprego = true;
 let temDividasPendentes = false;
 
 // Verifique a elegibilidade para o empréstimo usando operadores lógicos
-if (/* sua condição */) {
+if (idade >= 21 && temEmprego && !temDividasPendentes) {
   console.log("Elegível para empréstimo.");
 } else {
   console.log("Não elegível para empréstimo.");

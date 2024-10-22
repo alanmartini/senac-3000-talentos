@@ -1,0 +1,37 @@
+Principais comandos do Git:
+
+Inicializa um repositório Git localmente.
+git init
+
+Clona um repositório remoto para o seu computador.
+git clone <url_git>
+
+Adiciona um arquivo ao stage para ser commitado.
+git add <file>
+
+Realiza um commit com uma mensagem descritiva.
+git commit -m "mensagem"
+
+Envia os commits locais para o repositório remoto.
+git push origin nome_da_branch
+
+Atualiza o repositório local com as alterações do repositório remoto.
+git pull origin nome_da_branch
+
+Mostra o estado atual do repositório.
+git status
+
+Lista, cria ou deleta branches.
+git branch
+
+Realiza o merge de uma branch com a branch atual.
+git merge <branch>
+
+Alterna entre branches ou restaura arquivos.
+git checkout <branch>:
+
+Mostra o histórico de commits.
+git log
+
+Volta para um determinado ponto na história do repositório.
+git reset

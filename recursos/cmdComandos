@@ -1,0 +1,25 @@
+Principais comandos de navegação e criação de diretórios:
+
+- `pwd`: Mostra o diretório atual.
+
+- `ls`: Lista arquivos e diretórios no diretório atual.
+
+- `ls -all`: Lista arquivos e diretórios no diretório atual, incluindo arquivos ocultos.
+
+- `cd <diretório>`: Navega para o diretório especificado.
+
+- `cd ..`: Volta para o diretório anterior.
+
+- `cd ~`: Vai para o diretório home do usuário.
+
+- `mkdir <diretório>`: Cria um novo diretório.
+
+- `rmdir <diretório>`: Remove um diretório vazio.
+
+- `shift + insert`: Cola o que está na área de transferência.
+
+- `code .`: Abre o Visual Studio Code no diretório atual.
+
+- `tecla TAB`: para preenchimento automático de arquivos ou pastas.
+
+- `flecha para cima`(arrow up): exibe comandos anteriores
