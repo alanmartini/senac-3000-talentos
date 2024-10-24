@@ -14,9 +14,9 @@ function promessaComDelay(numero, delay) {
 
 // Usando Promise.all
 const promessas = [
-  promessaComDelay(5, 7000),
-  promessaComDelay(10, 3000),
-  promessaComDelay(15, 1000),
+  promessaComDelay(1, 7000),
+  promessaComDelay(2, 3000),
+  promessaComDelay(3, 1000),
 ];
 
 Promise.all(promessas)

@@ -22,3 +22,15 @@ promessaSimples()
   .finally(() => {
     console.log("Fim da Promise");
   });
+
+// Promise.resolve(console.log("Hello teste 1"));
+
+// Promise.resolve(console.log("Hello teste 2")).then(() => console.log("Then Hello"));
+
+// Promise.reject(console.log("Hello teste 3")).then(() =>
+//   console.log("Then Hello")
+// );
+
+// Promise.reject(console.log("Hello teste 3"))
+//   .then(() => console.log("Then Hello"))
+//   .catch((erro) => console.log(erro));
