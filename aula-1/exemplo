@@ -31,3 +31,45 @@ async function fetchPostsAndUsers() {
 
 // Executa a função
 fetchPostsAndUsers();
+
+// server.js
+const http = require("http");
+
+// Função para buscar dados da API externa
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    return response.json();
+  } catch (error) {
+    console.error("Erro ao buscar dados:", error);
+    return { error: "Falha ao obter dados" };
+  }
+}
+
+// Criação do servidor
+const server = http.createServer(async (req, res) => {
+  res.setHeader("Content-Type", "application/json");
+
+  if (req.url === "/tarefas" && req.method === "GET") {
+    const todosData = await fetchData(
+      "https://jsonplaceholder.typicode.com/todos"
+    );
+    res.writeHead(200);
+    res.end(JSON.stringify(todosData));
+  } else if (req.url === "/usuarios" && req.method === "GET") {
+    const usersData = await fetchData(
+      "https://jsonplaceholder.typicode.com/users"
+    );
+    res.writeHead(200);
+    res.end(JSON.stringify(usersData));
+  } else {
+    res.writeHead(404);
+    res.end(JSON.stringify({ message: "Rota não encontrada" }));
+  }
+});
+
+// Inicialização do servidor
+const PORT = 3000;
+server.listen(PORT, () => {
+  console.log(`Servidor rodando em http://localhost:${PORT}`);
+});
